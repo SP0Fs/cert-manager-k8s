@@ -13,7 +13,7 @@ spec:
         releaseName: cert-manager
     - repoURL: 'https://github.com/SP0Fs/cert-manager-k8s.git'
       targetRevision: HEAD
-      path: issuer.yaml
+      path: resources
   destination:
     server: "https://kubernetes.default.svc"
     namespace: cert-manager
