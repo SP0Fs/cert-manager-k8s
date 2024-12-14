@@ -8,7 +8,7 @@ spec:
   sources:
     - chart: cert-manager
       repoURL: https://charts.jetstack.io
-      targetRevision: v1.14.2
+      targetRevision: v1.16.2
       helm:
         releaseName: cert-manager
     - repoURL: 'https://github.com/SP0Fs/cert-manager-k8s.git'
