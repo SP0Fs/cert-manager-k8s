@@ -11,7 +11,12 @@ spec:
       targetRevision: v1.16.2
       helm:
         releaseName: cert-manager
-    - repoURL: 'https://github.com/SP0Fs/cert-manager-k8s.git'
+        valueFiles:
+          - $values/values.yaml
+    - repoURL: "https://github.com/SP0Fs/cert-manager-k8s.git"
+      targetRevision: HEAD
+      ref: values
+    - repoURL: "https://github.com/SP0Fs/cert-manager-k8s.git"
       targetRevision: HEAD
       path: resources
   destination:
@@ -22,4 +27,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
